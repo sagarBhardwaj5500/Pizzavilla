@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import ImgBg from '../../images/pizza-3.jpg';
+import styled from "styled-components";
+import ImgBg from "../../images/pizza-3.jpg";
 
 export const HeroContainer = styled.div`
   background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
@@ -8,7 +8,6 @@ export const HeroContainer = styled.div`
   background-position: center;
   background-size: cover;
 `;
-
 
 export const HeroContent = styled.div`
   height: calc(100vh - 80px);
