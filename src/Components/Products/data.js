@@ -13,6 +13,7 @@ export const productData = [
       desc:
         'Marinara sauce, basil, italian sausage, roma tomatoes, olives, and pesto',
       price: '@199*',
+      actualPrice: 199,
       button: 'Add to Cart'
     },
     {
@@ -22,6 +23,7 @@ export const productData = [
       desc:
         ' Marinara sauce, basil, italian sausage, roma tomatoes, olives, and pesto',
       price: '@199*',
+      actualPrice: 199,
       button: 'Add to Cart'
     },
     {
@@ -31,6 +33,7 @@ export const productData = [
       desc:
         ' Marinara sauce, basil, italian sausage, roma tomatoes, olives, and pesto',
       price: '@199*',
+      actualPrice: 199,
       button: 'Add to Cart'
     }
   ];
@@ -43,6 +46,7 @@ export const productData = [
       desc:
         'Belgian chocolate glazed donuts covered in icing with sprinkles on top',
       price: '@199*',
+      actualPrice: 199,
       button: 'Add to Cart'
     },
     {
@@ -52,6 +56,7 @@ export const productData = [
       desc:
         'Vanilla ice cream covered with caramel and chocolate glaze topped with a coco stick',
       price: '@299*',
+      actualPrice: 299,
       button: 'Add to Cart'
     },
     {
@@ -61,6 +66,7 @@ export const productData = [
       desc:
         'Double fudge brownie squares topped with white chocolate pieces and macadamia nuts',
       price: '@399*',
+      actualPrice: 399,
       button: 'Add to Cart'
     }
   ];

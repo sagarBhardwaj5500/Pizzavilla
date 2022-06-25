@@ -1,15 +1,16 @@
 import styled from "styled-components";
 import { NavLink as Link } from "react-router-dom";
-import { FaPizzaSlice } from "react-icons/fa";
+import { FaPizzaSlice, FaShoppingCart } from "react-icons/fa";
 
 export const Nav = styled.nav`
   background: transparent;
   height: 80px;
   display: flex;
   justify-content: center;
-  font-weight: 700;  `
+  font-weight: 700;
+`;
 
-  export const NavLink = styled(Link)`
+export const NavLink = styled(Link)`
   color: #fff;
   font-size: 2rem;
   display: flex;
@@ -39,6 +40,10 @@ export const NavIcon = styled.div`
 `;
 
 export const Bars = styled(FaPizzaSlice)`
+  font-size: 2rem;
+  transform: translate(-50%, -15%);
+`;
+export const CartIcon = styled(FaShoppingCart)`
   font-size: 2rem;
   transform: translate(-50%, -15%);
 `;
