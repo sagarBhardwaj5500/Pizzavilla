@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Navbar from "../Navbar";
 import Sidebar from "../Sidebar";
 import {
@@ -25,7 +26,12 @@ const Hero = () => {
         <HeroItems className="appearAnimation">
           <HeroH1>Greatest Pizza Ever</HeroH1>
           <HeroP>Ready in 60 seconds</HeroP>
-          <HeroBtn>Place Order</HeroBtn>
+          <div style={{ display: "flex", gap: "10px" }}>
+            <HeroBtn>Place Order</HeroBtn>
+            <HeroBtn>
+              <Link className="cart" to="/cart">Visit Cart</Link>
+            </HeroBtn>
+          </div>
         </HeroItems>
       </HeroContent>
     </HeroContainer>
