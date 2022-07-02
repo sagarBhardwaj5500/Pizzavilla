@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const Card = ({ actualPrice, image, name, orderOn, orderDate, desc }) => {
+const Card = ({ actualPrice, image, name, orderOn, desc }) => {
   return (
     <section className="orderSection">
       <div>
@@ -10,8 +10,7 @@ const Card = ({ actualPrice, image, name, orderOn, orderDate, desc }) => {
         <h3>{name}</h3>
         <h5> price ₹{actualPrice}</h5>
         <h5> {desc}</h5>
-        <h5> Order Date {orderDate} </h5>
-        <h5> Order On :  {orderOn} </h5>
+        <h5> Order On : {orderOn} </h5>
       </div>
     </section>
   );
@@ -57,6 +56,17 @@ const Admin = () => {
               ))}
             </div>
           }
+        </div>
+        <div className="payment">
+          <button
+            className="btn"
+            onClick={() => {
+              localStorage.setItem("userState", "");
+              window.location.reload(false);
+            }}
+          >
+            Log Out
+          </button>
         </div>
       </div>
     </>
