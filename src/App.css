@@ -60,6 +60,11 @@
   display: flex;
   gap: 10%;
   align-items: center;
+  
+}
+.cart {
+  text-decoration: none;
+  color: #fff;
 }
 .btn {
   margin-top: 10px;
@@ -73,4 +78,65 @@
 }
 .btn:hover {
   transform: scale(1.1);
+}
+
+.loginWrapper {
+  display: flex;
+  /* background: #570a57; */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
+}
+
+.formWrapper {
+  background: #2e0249;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 400px;
+  max-width: 90%;
+}
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+}
+.inputBox {
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  margin-bottom: 14px;
+  background: #eee;
+  font-size: 16px;
+  font-weight: bold;
+}
+.inputBox:focus {
+  border: 1.7px solid #f053be;
+}
+.btn {
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.loginBtn,.signUpBtn {
+  background: #f806cc;
+  width: 100px;
+  margin-left: auto;
+}
+.createInfo {
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.createNewBtn {
+  color: #f806cc;
+  text-decoration: none;
+  border-bottom: 1px solid #f806cc;
+  transition: all 0.3s ease-in-out;
 }

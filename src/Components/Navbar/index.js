@@ -9,10 +9,10 @@ const Navbar = ({ toggle }) => {
         <NavIcon>
           <p>Menu</p>
           <Bars onClick={toggle} />
+        </NavIcon>
           <CartIcon>
             <Link to="/cart" />;
           </CartIcon>
-        </NavIcon>
       </Nav>
     </>
   );

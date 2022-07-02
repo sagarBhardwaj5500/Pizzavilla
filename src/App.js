@@ -8,6 +8,8 @@ import { Toaster } from "react-hot-toast";
 import Feature from "./Components/Feature";
 import Footer from "./Components/Footer";
 import Cart from "./Components/Cart";
+import Login from "./admin/Login";
+import Admin from "./admin/Admin";
 
 function App() {
   return (
@@ -24,7 +26,29 @@ function App() {
         <Route path="/cart" exact>
           <Cart />
         </Route>
-      </Switch> 
+        <Route path="/login" exact>
+          {localStorage.getItem("userState") === "LOGGED_IN" ? (
+            <Admin />
+          ) : (
+            <Login />
+          )}
+        </Route>
+        <Route path="/admin" exact>
+          {localStorage.getItem("userState") === "LOGGED_IN" ? (
+            <Admin />
+          ) : (
+            <Login />
+          )}
+        </Route>
+        <Route path="*">
+          <GlobalStyle />
+          <Hero />
+          <Products heading="Choose your favorite" data={productData} />
+          <Feature />
+          <Products heading="Choose your Sweet" data={productDataTwo} />
+          <Footer />
+        </Route>
+      </Switch>
       <Toaster />
     </Router>
   );
