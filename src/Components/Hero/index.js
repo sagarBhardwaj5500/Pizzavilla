@@ -27,7 +27,7 @@ const Hero = () => {
           <HeroH1>Greatest Pizza Ever</HeroH1>
           <HeroP>Ready in 60 seconds</HeroP>
           <div style={{ display: "flex", gap: "10px" }}>
-            <HeroBtn>Place Order</HeroBtn>
+            
             <HeroBtn>
               <Link className="cart" to="/cart">Visit Cart</Link>
             </HeroBtn>
